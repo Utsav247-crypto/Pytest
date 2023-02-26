@@ -28,9 +28,9 @@ jobs:
         pip install -r requirements.txt        
     - name: Run pytest
       run: | 
-        pytest --html=report.html
+        pytest --html=report.html --self-contained-html
     - uses: actions/upload-artifact@v3
       with:
         name: my-artifact
-        path: ///home/runner/work/Pytest/Pytest/
+        path: ///home/runner/work/Pytest/Pytest/report.html
 
