@@ -1,5 +1,5 @@
 import pytest
-@pytest.fixture(autouse=True)
+@pytest.fixture(scope='function',autouse=True)
 def setup(request):
     print('login browser')
     session = request.node
