@@ -28,6 +28,4 @@ jobs:
         pip install -r requirements.txt        
     - name: Run pytest
       run: | 
-        pip install pytest
-        pip install pytest-cov
         pytest --junit-xml=aaa.xml
