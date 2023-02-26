@@ -29,8 +29,4 @@ jobs:
     - name: Run pytest
       run: | 
         pytest --html=report.html
-    - name: Upload artifact
-      uses: actions/upload-artifact@v1
-      with:
-        name: Pytest
-        path: /**
+
