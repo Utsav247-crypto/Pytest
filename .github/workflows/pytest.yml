@@ -31,6 +31,6 @@ jobs:
         pytest --html=report.html --self-contained-html
     - uses: actions/upload-artifact@v3
       with:
-        name: my-artifact
+        name: Report Output
         path: ///home/runner/work/Pytest/Pytest/report.html
 
